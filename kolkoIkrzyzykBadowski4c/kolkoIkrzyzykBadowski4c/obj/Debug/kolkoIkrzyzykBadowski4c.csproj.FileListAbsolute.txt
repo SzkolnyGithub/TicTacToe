@@ -1,0 +1,11 @@
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.csproj.AssemblyReference.cache
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.Properties.Resources.resources
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.csproj.GenerateResource.cache
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.csproj.CoreCompileInputs.cache
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\bin\Debug\kolkoIkrzyzykBadowski4c.exe.config
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\bin\Debug\kolkoIkrzyzykBadowski4c.exe
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\bin\Debug\kolkoIkrzyzykBadowski4c.pdb
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.exe
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.pdb
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.glowneOkno.resources
+C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.csproj.SuggestedBindingRedirects.cache
