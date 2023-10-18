@@ -30,7 +30,8 @@ namespace kolkoIkrzyzykBadowski4c
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.napis = new System.Windows.Forms.Label();
+            this.reset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -43,24 +44,39 @@ namespace kolkoIkrzyzykBadowski4c
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // napis
             // 
-            this.label1.Location = new System.Drawing.Point(81, 222);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.napis.BackColor = System.Drawing.SystemColors.Window;
+            this.napis.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.napis.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.napis.Location = new System.Drawing.Point(333, 267);
+            this.napis.Name = "napis";
+            this.napis.Size = new System.Drawing.Size(197, 47);
+            this.napis.TabIndex = 3;
+            this.napis.Visible = false;
+            // 
+            // reset
+            // 
+            this.reset.Location = new System.Drawing.Point(42, 219);
+            this.reset.Name = "reset";
+            this.reset.Size = new System.Drawing.Size(120, 23);
+            this.reset.TabIndex = 4;
+            this.reset.Text = "Reset";
+            this.reset.UseVisualStyleBackColor = true;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // glowneOkno
             // 
             this.ClientSize = new System.Drawing.Size(684, 561);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.reset);
+            this.Controls.Add(this.napis);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "glowneOkno";
             this.Text = "Kółko i Krzyżyk";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.glowneOkno_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.glowneOkno_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.glowneOkno_MouseUp);
             this.ResumeLayout(false);
 
         }
@@ -68,7 +84,8 @@ namespace kolkoIkrzyzykBadowski4c
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label napis;
+        private System.Windows.Forms.Button reset;
     }
 }
 
