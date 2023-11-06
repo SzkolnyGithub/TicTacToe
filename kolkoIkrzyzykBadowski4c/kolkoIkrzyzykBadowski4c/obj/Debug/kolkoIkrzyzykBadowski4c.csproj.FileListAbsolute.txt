@@ -8,7 +8,6 @@ C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\
 C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.exe
 C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.pdb
 C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.glowneOkno.resources
-C:\Users\abadowski\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\obj\Debug\kolkoIkrzyzykBadowski4c.csproj.SuggestedBindingRedirects.cache
 C:\Users\artur\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\bin\Debug\kolkoIkrzyzykBadowski4c.exe.config
 C:\Users\artur\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\bin\Debug\kolkoIkrzyzykBadowski4c.exe
 C:\Users\artur\source\repos\kolkoIkrzyzykBadowski4c\kolkoIkrzyzykBadowski4c\bin\Debug\kolkoIkrzyzykBadowski4c.pdb

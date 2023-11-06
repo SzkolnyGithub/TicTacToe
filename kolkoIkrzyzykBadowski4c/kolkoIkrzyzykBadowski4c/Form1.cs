@@ -33,9 +33,9 @@ namespace kolkoIkrzyzykBadowski4c
         }
         private void glowneOkno_MouseMove(object sender, MouseEventArgs e)
         {
-            
+
         }
-        private void pole(int x, int y, int numer, string symbol)
+        private int pole(int x, int y, int numer, string symbol)
         {
             if (aktywny[numer] == true)
             {
@@ -45,49 +45,61 @@ namespace kolkoIkrzyzykBadowski4c
                 Rectangle r = new Rectangle(x, y, 100, 100);
                 g.DrawEllipse(p, r);
                 symbole[numer] = symbol;
-            } else
+                return 1;
+            }
+            else
             {
-                return;
+                return 0;
             }
         }
-        private void ruchGracza(object sender, MouseEventArgs e)
+        private int ruchGracza(object sender, MouseEventArgs e)
         {
             if (e.X < 350 && e.Y < 200 && e.X > 200 && e.Y > 50)
             {
-                pole(220, 70, 1, "o");
+                int odnosnik = pole(220, 70, 1, "o");
+                return odnosnik;
             }
             else if (e.X < 350 && e.X > 200 && e.Y > 200 && e.Y < 350)
             {
-                pole(220, 220, 2, "o");
+                int odnosnik = pole(220, 220, 2, "o");
+                return odnosnik;
             }
             else if (e.X < 350 && e.X > 200 && e.Y > 350 && e.Y < 500)
             {
-                pole(220, 380, 3, "o");
+                int odnosnik = pole(220, 380, 3, "o");
+                return odnosnik;
             }
             else if (e.X > 350 && e.Y < 200 && e.X < 500 && e.Y > 50)
             {
-                pole(370, 70, 4, "o");
+                int odnosnik = pole(370, 70, 4, "o");
+                return odnosnik;
             }
             else if (e.X > 350 && e.Y < 350 && e.X < 500 && e.Y > 200)
             {
-                pole(370, 220, 5, "o");
+                int odnosnik = pole(370, 220, 5, "o");
+                return odnosnik;
             }
             else if (e.X > 350 && e.Y < 500 && e.X < 500 && e.Y > 350)
             {
-                pole(370, 380, 6, "o");
+                int odnosnik = pole(370, 380, 6, "o");
+                return odnosnik;
             }
             else if (e.X > 500 && e.X < 650 && e.Y > 50 && e.Y < 200)
             {
-                pole(520, 70, 7, "o");
+                int odnosnik = pole(520, 70, 7, "o");
+                return odnosnik;
             }
             else if (e.X > 500 && e.X < 650 && e.Y < 350 && e.Y > 200)
             {
-                pole(520, 220, 8, "o");
+                int odnosnik = pole(520, 220, 8, "o");
+                return odnosnik;
             }
             else if (e.X > 500 && e.X < 650 && e.Y > 350 && e.Y < 500)
             {
-                pole(520, 380, 9, "o");
+                int odnosnik = pole(520, 380, 9, "o");
+                return odnosnik;
             }
+            return 2;
         }
         private void poleKomputer(int x1, int y1, int x2, int y2, int x3, int y3, int x4, int y4, int numer, string symbol)
         {
@@ -115,7 +127,9 @@ namespace kolkoIkrzyzykBadowski4c
             if (counter == aktywny.Length)
             {
                 return;
-            } else {
+            }
+            else
+            {
                 Random rand = new Random();
                 int miejsce = rand.Next(1, 10);
                 while (aktywny[miejsce] == false)
@@ -172,7 +186,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(275, 70);
                 Point p2 = new Point(275, 480);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[4] == "o" && symbole[5] == "o" && symbole[6] == "o")
             {
                 wynik = 1;
@@ -181,7 +195,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(425, 70);
                 Point p2 = new Point(425, 480);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[7] == "o" && symbole[8] == "o" && symbole[9] == "o")
             {
                 wynik = 1;
@@ -190,7 +204,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(575, 70);
                 Point p2 = new Point(575, 480);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[1] == "o" && symbole[4] == "o" && symbole[7] == "o")
             {
                 wynik = 1;
@@ -199,7 +213,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(220, 125);
                 Point p2 = new Point(630, 125);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[2] == "o" && symbole[5] == "o" && symbole[8] == "o")
             {
                 wynik = 1;
@@ -208,7 +222,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(220, 275);
                 Point p2 = new Point(630, 275);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[3] == "o" && symbole[6] == "o" && symbole[9] == "o")
             {
                 wynik = 1;
@@ -217,7 +231,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(220, 425);
                 Point p2 = new Point(630, 425);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[1] == "o" && symbole[5] == "o" && symbole[9] == "o")
             {
                 wynik = 1;
@@ -226,7 +240,7 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(220, 70);
                 Point p2 = new Point(630, 480);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else if (symbole[3] == "o" && symbole[5] == "o" && symbole[7] == "o")
             {
                 wynik = 1;
@@ -307,10 +321,10 @@ namespace kolkoIkrzyzykBadowski4c
                 Point p1 = new Point(220, 480);
                 Point p2 = new Point(630, 70);
                 gdi.DrawLine(p, p1, p2);
-            } 
+            }
             else
             {
-                if(aktywny[1] == false && aktywny[2] == false && aktywny[3] == false && aktywny[4] == false && aktywny[5] == false && aktywny[6] == false && aktywny[7] == false && aktywny[8] == false && aktywny[9] == false)
+                if (aktywny[1] == false && aktywny[2] == false && aktywny[3] == false && aktywny[4] == false && aktywny[5] == false && aktywny[6] == false && aktywny[7] == false && aktywny[8] == false && aktywny[9] == false)
                 {
                     wynik = 3;
                 }
@@ -321,12 +335,12 @@ namespace kolkoIkrzyzykBadowski4c
 
         private bool checker()
         {
-                int kto = Wynik();
-                if (kto == 1)
-                {
-                    napis.Visible = true;
+            int kto = Wynik();
+            if (kto == 1)
+            {
+                napis.Visible = true;
                 napis.BackColor = Color.FromArgb(128, 128, 128, 128);
-                    napis.Text = "Wygrałeś!";
+                napis.Text = "Wygrałeś!";
                 Graphics gdi = this.CreateGraphics();
                 Pen p = new Pen(Color.FromArgb(255, 128, 128, 128), 3);
                 Rectangle rect = new Rectangle(200, 50, 450, 450);
@@ -335,8 +349,8 @@ namespace kolkoIkrzyzykBadowski4c
                 gdi.DrawRectangle(p, rect);
                 return false;
             }
-                else if (kto == 2)
-                {
+            else if (kto == 2)
+            {
                 napis.Visible = true;
                 napis.BackColor = Color.FromArgb(128, 128, 128, 128);
                 napis.Text = "Przegrałeś!";
@@ -349,7 +363,7 @@ namespace kolkoIkrzyzykBadowski4c
                 return false;
             }
             else if (kto == 3)
-                {
+            {
                 napis.BackColor = Color.FromArgb(128, 128, 128, 128);
                 napis.Visible = true;
                 napis.Text = "Remis!";
@@ -362,9 +376,9 @@ namespace kolkoIkrzyzykBadowski4c
                 return false;
             }
             else
-                {
+            {
                 return true;
-                }
+            }
         }
         private void glowneOkno_MouseDown(object sender, MouseEventArgs e)
         {
@@ -374,51 +388,53 @@ namespace kolkoIkrzyzykBadowski4c
             }
             if (e.X > 200 && e.X < 650 && e.Y > 50 && e.Y < 500)
             {
-                ruchGracza(sender, e);
-                Thread.Sleep(250);
-                ruchKomputera(sender, e);
-                if (aktywny[1] == false && aktywny[2] == false && aktywny[3] == false && aktywny[4] == false && aktywny[5] == false && aktywny[6] == false && aktywny[7] == false && aktywny[8] == false && aktywny[9] == false)
+                int ruch = ruchGracza(sender, e);
+                if (ruch == 0)
                 {
-                    czyMoznaGrac = checker();
+                    return;
                 }
-                else if (aktywny[1] == false && aktywny[2] == false && aktywny[3] == false)
+                else
                 {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[4] == false && aktywny[5] == false && aktywny[6] == false)
-                {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[7] == false && aktywny[8] == false && aktywny[9] == false)
-                {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[1] == false && aktywny[4] == false && aktywny[7] == false)
-                {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[2] == false && aktywny[5] == false && aktywny[8] == false)
-                {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[3] == false && aktywny[6] == false && aktywny[9] == false)
-                {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[1] == false && aktywny[5] == false && aktywny[9] == false)
-                {
-                    czyMoznaGrac = checker();
-                }
-                else if (aktywny[3] == false && aktywny[5] == false && aktywny[7] == false)
-                {
-                    czyMoznaGrac = checker();
+                    Thread.Sleep(250);
+                    ruchKomputera(sender, e);
+                    if (aktywny[1] == false && aktywny[2] == false && aktywny[3] == false && aktywny[4] == false && aktywny[5] == false && aktywny[6] == false && aktywny[7] == false && aktywny[8] == false && aktywny[9] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[1] == false && aktywny[2] == false && aktywny[3] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[4] == false && aktywny[5] == false && aktywny[6] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[7] == false && aktywny[8] == false && aktywny[9] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[1] == false && aktywny[4] == false && aktywny[7] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[2] == false && aktywny[5] == false && aktywny[8] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[3] == false && aktywny[6] == false && aktywny[9] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[1] == false && aktywny[5] == false && aktywny[9] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
+                    else if (aktywny[3] == false && aktywny[5] == false && aktywny[7] == false)
+                    {
+                        czyMoznaGrac = checker();
+                    }
                 }
             }
-        }
-
-        private void glowneOkno_MouseUp(object sender, MouseEventArgs e)
-        {
-            
         }
         private void clear()
         {
@@ -428,7 +444,7 @@ namespace kolkoIkrzyzykBadowski4c
         }
         private void reset_Click(object sender, EventArgs e)
         {
-            for(int i = 1; i < aktywny.Length; i++)
+            for (int i = 1; i < aktywny.Length; i++)
             {
                 aktywny[i] = true;
                 symbole[i] = "z";
@@ -437,6 +453,15 @@ namespace kolkoIkrzyzykBadowski4c
             this.clear();
             napis.Hide();
             napis.Text = "";
+        }
+
+        private void glowneOkno_Load(object sender, EventArgs e)
+        {
+
+        }
+        private void glowneOkno_MouseUp(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }
